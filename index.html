@@ -15,17 +15,17 @@
     body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--paper);line-height:1.6}
     a{color:inherit;text-decoration:none}img{display:block;max-width:100%}.container{width:min(var(--max),calc(100% - 40px));margin:auto}
     .site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line)}
-    .nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:30px}.brand img{width:170px}
+    .nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:30px}.brand{display:flex;align-items:center;gap:12px;min-width:300px}.brand-mark{font-size:24px;font-weight:900;letter-spacing:.04em;color:var(--ink)}.brand-name{max-width:220px;font-size:11px;line-height:1.25;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.07em}
     .links{display:flex;gap:26px;align-items:center;font-size:14px;font-weight:700}.links a{padding:30px 0;position:relative}
     .links a:after{content:"";position:absolute;left:0;bottom:22px;width:0;height:2px;background:var(--coral);transition:.2s}.links a:hover:after{width:100%}
     .toggle{display:none;background:none;border:0;padding:8px}.toggle span{display:block;width:25px;height:2px;background:var(--ink);margin:5px 0}
     .hero{min-height:690px;display:flex;align-items:center;border-bottom:1px solid var(--line);background:linear-gradient(90deg,rgba(16,60,72,.03) 1px,transparent 1px),linear-gradient(rgba(16,60,72,.03) 1px,transparent 1px);background-size:34px 34px}
-    .hero-inner{display:grid;grid-template-columns:1.25fr .75fr;gap:80px;align-items:center;padding:80px 0}
+    .hero-inner{display:grid;grid-template-columns:1.45fr .55fr;gap:80px;align-items:center;padding:80px 0}
     .eyebrow,.kicker{display:block;font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--coral);margin-bottom:18px}
     h1,h2,h3{margin:0;color:var(--ink);line-height:1.12}h1{font-size:clamp(44px,6vw,76px);letter-spacing:-.045em;max-width:880px}h2{font-size:clamp(32px,4vw,50px);letter-spacing:-.03em}h3{font-size:22px}
     .hero p{max-width:690px;font-size:20px;color:var(--muted);margin:28px 0 32px}.actions{display:flex;gap:16px;flex-wrap:wrap}
     .btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 21px;border:1px solid var(--ink);font-weight:800;font-size:14px}.btn.primary{background:var(--ink);color:#fff}.btn.secondary{background:#fff}
-    .hero-logo{border-left:1px solid var(--line);padding-left:55px;display:flex;align-items:center}.hero-logo img{width:100%;max-width:360px;margin:auto}
+    .hero-side{border-left:1px solid var(--line);padding-left:55px;min-height:300px;display:flex;flex-direction:column;justify-content:center}.hero-monogram{font-size:clamp(72px,9vw,132px);font-weight:900;letter-spacing:-.06em;line-height:.9;color:rgba(16,60,72,.08);margin-bottom:26px}.hero-side p{margin:0;color:var(--ink);font-size:15px;line-height:1.5;max-width:250px;font-weight:700}.hero-side span{display:block;color:var(--coral);font-size:12px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
     .section{padding:105px 0}.section.soft{background:var(--soft)}
     .intro-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:100px;align-items:start}.intro-grid .copy p{font-size:20px;color:var(--muted);margin:0 0 18px}
     .mission-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:90px;align-items:start}.mission-statement{position:sticky;top:120px}.mission-statement p{font-size:20px;color:var(--muted);max-width:520px}
@@ -37,21 +37,21 @@
     .donation-panel{border-top:3px solid var(--coral);padding:34px 0 0}.donation-label{display:block;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:var(--coral);margin-bottom:18px}.donation-panel h3{font-size:30px;margin-bottom:16px}.donation-panel p{color:var(--muted);margin:0 0 24px}.donation-button{margin-bottom:16px}.note{font-size:12px;color:var(--muted)}
     .contact{display:grid;grid-template-columns:.8fr 1.2fr;gap:100px}.contact-details{margin-top:36px;border-top:1px solid var(--line)}.contact-details div{display:grid;grid-template-columns:120px 1fr;gap:20px;padding:17px 0;border-bottom:1px solid var(--line)}.contact-details span{color:var(--muted)}
     .contact-form{display:grid;gap:18px}.contact-placeholder{border-top:3px solid var(--mint);padding-top:34px;align-content:start}.contact-placeholder h3{font-size:30px;margin-bottom:14px}.contact-placeholder p{margin:0;color:var(--muted);max-width:620px}
-    footer{border-top:1px solid var(--line);padding:35px 0}.footer{display:grid;grid-template-columns:150px 1fr auto;gap:30px;align-items:center}.footer img{width:125px}.footer p{margin:2px 0}.small{font-size:13px;color:var(--muted)}.footer-links{display:flex;gap:18px;font-size:14px;font-weight:700}
-    @media(max-width:980px){.toggle{display:block}.links{display:none;position:absolute;top:82px;left:20px;right:20px;flex-direction:column;align-items:stretch;background:#fff;border:1px solid var(--line);padding:10px 18px}.links.open{display:flex}.links a{padding:13px 0}.links a:after{display:none}.hero-inner,.intro-grid,.mission-grid,.section-head,.contact,.donation-grid{grid-template-columns:1fr;gap:38px}.hero-logo{border-left:0;border-top:1px solid var(--line);padding:35px 0 0}.mission-statement{position:static}}
-    @media(max-width:680px){.container{width:min(var(--max),calc(100% - 28px))}.brand img{width:145px}.hero{min-height:auto}.hero-inner{padding:60px 0}h1{font-size:43px}h2{font-size:34px}.section{padding:76px 0}.goal{grid-template-columns:1fr;gap:8px}.news-row{grid-template-columns:1fr}.news-row b{display:none}.footer{grid-template-columns:1fr}.footer-links{flex-wrap:wrap}}
+    footer{border-top:1px solid var(--line);padding:35px 0}.footer{display:grid;grid-template-columns:150px 1fr auto;gap:30px;align-items:center}.footer-brand-mark{font-size:28px;font-weight:900;color:var(--ink)}.footer p{margin:2px 0}.small{font-size:13px;color:var(--muted)}.footer-links{display:flex;gap:18px;font-size:14px;font-weight:700}
+    @media(max-width:980px){.toggle{display:block}.links{display:none;position:absolute;top:82px;left:20px;right:20px;flex-direction:column;align-items:stretch;background:#fff;border:1px solid var(--line);padding:10px 18px}.links.open{display:flex}.links a{padding:13px 0}.links a:after{display:none}.hero-inner,.intro-grid,.mission-grid,.section-head,.contact,.donation-grid{grid-template-columns:1fr;gap:38px}.hero-side{border-left:0;border-top:1px solid var(--line);padding:35px 0 0;min-height:auto}.mission-statement{position:static}}
+    @media(max-width:680px){.container{width:min(var(--max),calc(100% - 28px))}.brand{min-width:0}.brand-name{display:none}.brand-mark{font-size:22px}.hero{min-height:auto}.hero-inner{padding:60px 0}h1{font-size:43px}h2{font-size:34px}.section{padding:76px 0}.goal{grid-template-columns:1fr;gap:8px}.news-row{grid-template-columns:1fr}.news-row b{display:none}.footer{grid-template-columns:1fr}.footer-links{flex-wrap:wrap}}
   </style>
 </head>
 <body>
 <header class="site-header"><div class="container nav">
-  <a class="brand" href="#home"><img src="assets/logo.webp" alt="Фондация Център за обществена превенция и развитие"></a>
+  <a class="brand" href="#home" aria-label="CPPD начало"><span class="brand-mark">CPPD</span><span class="brand-name">Център за обществена превенция и развитие</span></a>
   <button class="toggle" aria-label="Меню"><span></span><span></span><span></span></button>
   <nav class="links"><a href="#home">Начало</a><a href="#about">За фондацията</a><a href="#mission">Мисия и цели</a><a href="#news">Новини</a><a href="#donate">Подкрепа</a><a href="#contacts">Контакти</a></nav>
 </div></header>
 <main>
 <section class="hero" id="home"><div class="container hero-inner">
   <div><span class="eyebrow">Обществена полза • превенция • развитие</span><h1>Подкрепа за развитие, образование и социално включване.</h1><p>Фондация „Център за обществена превенция и развитие“ работи с деца, младежи, специалисти и общности чрез проекти, обучения и обществени инициативи.</p><div class="actions"><a class="btn primary" href="#mission">Мисия и цели</a><a class="btn secondary" href="#about">За фондацията</a></div></div>
-  <div class="hero-logo"><img src="assets/logo.webp" alt=""></div>
+  <aside class="hero-side"><div class="hero-monogram">CPPD</div><span>Фондация в обществена полза</span><p>Превенция, образование и развитие с фокус върху децата, младите хора и общностите.</p></aside>
 </div></section>
 <section class="section" id="about"><div class="container intro-grid">
   <div><span class="kicker">За фондацията</span><h2>Независима организация в обществена полза</h2></div>
@@ -85,7 +85,7 @@
   <div class="contact-form contact-placeholder"><span class="kicker">Официален контакт</span><h3>Служебният имейл се активира.</h3><p>След настройването на пощата тук ще добавим директен адрес за контакт. Сайтът е подготвен за <strong>office@cppd.eu</strong>.</p></div>
 </div></section>
 </main>
-<footer><div class="container footer"><img src="assets/logo.webp" alt=""><div><p>Фондация „Център за обществена превенция и развитие“</p><p class="small">© <span id="year"></span> Всички права запазени.</p></div><div class="footer-links"><a href="#news">Новини</a><a href="#donate">Подкрепа</a><a href="#contacts">Контакти</a></div></div></footer>
+<footer><div class="container footer"><div class="footer-brand-mark">CPPD</div><div><p>Фондация „Център за обществена превенция и развитие“</p><p class="small">© <span id="year"></span> Всички права запазени.</p></div><div class="footer-links"><a href="#news">Новини</a><a href="#donate">Подкрепа</a><a href="#contacts">Контакти</a></div></div></footer>
 <script>
 const toggle=document.querySelector('.toggle');const links=document.querySelector('.links');toggle.addEventListener('click',()=>links.classList.toggle('open'));document.querySelectorAll('.links a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));document.getElementById('year').textContent=new Date().getFullYear();
 </script>
