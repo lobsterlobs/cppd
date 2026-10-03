@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Фондация „Център за обществена превенция и развитие“ работи за образование, превенция, социално включване и развитие на деца и младежи.">
+  <meta name="theme-color" content="#103c48">
+  <meta property="og:title" content="Фондация „Център за обществена превенция и развитие“">
+  <meta property="og:description" content="Обществена полза, превенция и развитие.">
+  <meta property="og:type" content="website">
+  <title>CPPD | Център за обществена превенция и развитие</title>
+  <style>
+    :root{--ink:#103c48;--text:#17363f;--muted:#6f7f84;--mint:#57b9a0;--coral:#ef735d;--paper:#fff;--soft:#f5f8f7;--line:#dce7e5;--max:1160px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--paper);line-height:1.6}
+    a{color:inherit;text-decoration:none}img{display:block;max-width:100%}.container{width:min(var(--max),calc(100% - 40px));margin:auto}
+    .site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line)}
+    .nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:30px}.brand img{width:170px}
+    .links{display:flex;gap:26px;align-items:center;font-size:14px;font-weight:700}.links a{padding:30px 0;position:relative}
+    .links a:after{content:"";position:absolute;left:0;bottom:22px;width:0;height:2px;background:var(--coral);transition:.2s}.links a:hover:after{width:100%}
+    .toggle{display:none;background:none;border:0;padding:8px}.toggle span{display:block;width:25px;height:2px;background:var(--ink);margin:5px 0}
+    .hero{min-height:690px;display:flex;align-items:center;border-bottom:1px solid var(--line);background:linear-gradient(90deg,rgba(16,60,72,.03) 1px,transparent 1px),linear-gradient(rgba(16,60,72,.03) 1px,transparent 1px);background-size:34px 34px}
+    .hero-inner{display:grid;grid-template-columns:1.25fr .75fr;gap:80px;align-items:center;padding:80px 0}
+    .eyebrow,.kicker{display:block;font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--coral);margin-bottom:18px}
+    h1,h2,h3{margin:0;color:var(--ink);line-height:1.12}h1{font-size:clamp(44px,6vw,76px);letter-spacing:-.045em;max-width:880px}h2{font-size:clamp(32px,4vw,50px);letter-spacing:-.03em}h3{font-size:22px}
+    .hero p{max-width:690px;font-size:20px;color:var(--muted);margin:28px 0 32px}.actions{display:flex;gap:16px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 21px;border:1px solid var(--ink);font-weight:800;font-size:14px}.btn.primary{background:var(--ink);color:#fff}.btn.secondary{background:#fff}
+    .hero-logo{border-left:1px solid var(--line);padding-left:55px;display:flex;align-items:center}.hero-logo img{width:100%;max-width:360px;margin:auto}
+    .section{padding:105px 0}.section.soft{background:var(--soft)}
+    .intro-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:100px;align-items:start}.intro-grid .copy p{font-size:20px;color:var(--muted);margin:0 0 18px}
+    .mission-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:90px;align-items:start}.mission-statement{position:sticky;top:120px}.mission-statement p{font-size:20px;color:var(--muted);max-width:520px}
+    .goals{border-top:1px solid var(--line)}.goal{display:grid;grid-template-columns:170px 1fr;gap:28px;padding:28px 0;border-bottom:1px solid var(--line)}.goal strong{color:var(--ink);font-size:15px}.goal p{margin:0;color:var(--muted)}
+    .section-head{display:grid;grid-template-columns:1fr .75fr;gap:60px;align-items:end;margin-bottom:46px}.section-head p{margin:0;color:var(--muted);font-size:18px}
+    .news-list{border-top:1px solid rgba(255,255,255,.18)}.dark{background:var(--ink);color:#fff}.dark h2,.dark h3{color:#fff}.dark .section-head p{color:rgba(255,255,255,.68)}
+    .news-row{display:grid;grid-template-columns:150px 1fr 30px;gap:30px;padding:28px 0;border-bottom:1px solid rgba(255,255,255,.18);align-items:start}.news-row span{font-size:13px;color:#9edbcb}.news-row h3{font-size:24px}.news-row b{font-size:20px;font-weight:500}.news-row div{display:grid;gap:8px}.news-excerpt{margin:0;color:rgba(255,255,255,.62);font-size:15px;max-width:760px}
+    .donation-section{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.donation-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:90px;align-items:start}.donation-lead{max-width:650px;font-size:20px;color:var(--muted);margin-top:24px}
+    .donation-panel{border-top:3px solid var(--coral);padding:34px 0 0}.donation-label{display:block;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:var(--coral);margin-bottom:18px}.donation-panel h3{font-size:30px;margin-bottom:16px}.donation-panel p{color:var(--muted);margin:0 0 24px}.donation-button{margin-bottom:16px}.note{font-size:12px;color:var(--muted)}
+    .contact{display:grid;grid-template-columns:.8fr 1.2fr;gap:100px}.contact-details{margin-top:36px;border-top:1px solid var(--line)}.contact-details div{display:grid;grid-template-columns:120px 1fr;gap:20px;padding:17px 0;border-bottom:1px solid var(--line)}.contact-details span{color:var(--muted)}
+    .contact-form{display:grid;gap:18px}.contact-placeholder{border-top:3px solid var(--mint);padding-top:34px;align-content:start}.contact-placeholder h3{font-size:30px;margin-bottom:14px}.contact-placeholder p{margin:0;color:var(--muted);max-width:620px}
+    footer{border-top:1px solid var(--line);padding:35px 0}.footer{display:grid;grid-template-columns:150px 1fr auto;gap:30px;align-items:center}.footer img{width:125px}.footer p{margin:2px 0}.small{font-size:13px;color:var(--muted)}.footer-links{display:flex;gap:18px;font-size:14px;font-weight:700}
+    @media(max-width:980px){.toggle{display:block}.links{display:none;position:absolute;top:82px;left:20px;right:20px;flex-direction:column;align-items:stretch;background:#fff;border:1px solid var(--line);padding:10px 18px}.links.open{display:flex}.links a{padding:13px 0}.links a:after{display:none}.hero-inner,.intro-grid,.mission-grid,.section-head,.contact,.donation-grid{grid-template-columns:1fr;gap:38px}.hero-logo{border-left:0;border-top:1px solid var(--line);padding:35px 0 0}.mission-statement{position:static}}
+    @media(max-width:680px){.container{width:min(var(--max),calc(100% - 28px))}.brand img{width:145px}.hero{min-height:auto}.hero-inner{padding:60px 0}h1{font-size:43px}h2{font-size:34px}.section{padding:76px 0}.goal{grid-template-columns:1fr;gap:8px}.news-row{grid-template-columns:1fr}.news-row b{display:none}.footer{grid-template-columns:1fr}.footer-links{flex-wrap:wrap}}
+  </style>
+</head>
+<body>
+<header class="site-header"><div class="container nav">
+  <a class="brand" href="#home"><img src="assets/logo.webp" alt="Фондация Център за обществена превенция и развитие"></a>
+  <button class="toggle" aria-label="Меню"><span></span><span></span><span></span></button>
+  <nav class="links"><a href="#home">Начало</a><a href="#about">За фондацията</a><a href="#mission">Мисия и цели</a><a href="#news">Новини</a><a href="#donate">Подкрепа</a><a href="#contacts">Контакти</a></nav>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="container hero-inner">
+  <div><span class="eyebrow">Обществена полза • превенция • развитие</span><h1>Подкрепа за развитие, образование и социално включване.</h1><p>Фондация „Център за обществена превенция и развитие“ работи с деца, младежи, специалисти и общности чрез проекти, обучения и обществени инициативи.</p><div class="actions"><a class="btn primary" href="#mission">Мисия и цели</a><a class="btn secondary" href="#about">За фондацията</a></div></div>
+  <div class="hero-logo"><img src="assets/logo.webp" alt=""></div>
+</div></section>
+<section class="section" id="about"><div class="container intro-grid">
+  <div><span class="kicker">За фондацията</span><h2>Независима организация в обществена полза</h2></div>
+  <div class="copy"><p>Фондацията е неправителствена, нерелигиозна и неполитическа независима обществена организация с нестопанска цел.</p><p>Дейността ѝ е насочена към деца и младежи, включително хора в риск и неравностойно социално положение, както и към образователни специалисти и организации.</p><p>Фондацията развива проекти, обучения, образователни програми, инициативи за социално включване и партньорства в страната и чужбина.</p></div>
+</div></section>
+<section class="section soft" id="mission"><div class="container mission-grid">
+  <div class="mission-statement"><span class="kicker">Мисия и цели</span><h2>По-добри възможности за личностна и професионална реализация.</h2><p>Работим за среда, в която децата и младите хора имат достъп до образование, подкрепа, умения и устойчиви възможности за развитие.</p></div>
+  <div class="goals">
+    <div class="goal"><strong>Личностно развитие</strong><p>Подкрепа за деца и младежи, включително за хора в риск, в неравностойно социално положение и от уязвими общности.</p></div>
+    <div class="goal"><strong>Интеграция и реализация</strong><p>Подобряване на достъпа до образование, пазара на труда и условия за устойчива заетост.</p></div>
+    <div class="goal"><strong>Образование</strong><p>Развитие на образователни програми, инструменти и модули за социална работа и обучение.</p></div>
+    <div class="goal"><strong>Качество на живот</strong><p>Инициативи и обучителни практики, насочени към умения, участие, превенция и по-добро качество на живот.</p></div>
+    <div class="goal"><strong>Капацитет</strong><p>Работа с образователни организации, експерти и специалисти според актуалните потребности на децата и младите хора.</p></div>
+    <div class="goal"><strong>Приобщаване</strong><p>Междукултурно учене, недискриминация, толерантност и подкрепа за приобщаващо образование.</p></div>
+  </div>
+</div></section>
+<section class="section dark" id="news"><div class="container">
+  <div class="section-head"><div><span class="kicker">Новини</span><h2>Актуално от фондацията</h2></div><p>Тук ще публикуваме официални съобщения, инициативи, партньорства и резултати от дейността.</p></div>
+  <div class="news-list">
+    <article class="news-row"><span>Новина</span><div><h3>Стартира секцията „Новини“</h3><p class="news-excerpt">В тази секция ще публикуваме официални съобщения, покани и информация за текущите дейности на фондацията.</p></div><b>→</b></article>
+    <article class="news-row"><span>Проекти</span><div><h3>Предстоящи инициативи</h3><p class="news-excerpt">Предстои публикуване на информация за нови проектни дейности и партньорства.</p></div><b>→</b></article>
+    <article class="news-row"><span>Ресурси</span><div><h3>Публични материали и резултати</h3><p class="news-excerpt">Документи и материали по реализирани дейности ще бъдат достъпни през сайта.</p></div><b>→</b></article>
+  </div>
+</div></section>
+<section class="section donation-section" id="donate"><div class="container donation-grid">
+  <div><span class="kicker">Подкрепете дейността ни</span><h2>Вашата подкрепа помага идеите да се превръщат в реални инициативи.</h2><p class="donation-lead">Даренията подпомагат дейности за деца и младежи, образователни инициативи, превенция, обучения и общественополезни проекти.</p></div>
+  <div class="donation-panel"><span class="donation-label">Дарение</span><h3>Подкрепете фондацията онлайн</h3><p>Не публикуваме банкова сметка на сайта. При активиране на онлайн даренията тук ще има защитен бутон за плащане с карта или друг избран платежен метод.</p><a class="btn primary donation-button" href="#contacts">Искам да подкрепя</a><p class="note">До активиране на онлайн плащанията можете да се свържете с фондацията през контактната секция.</p></div>
+</div></section>
+<section class="section soft" id="contacts"><div class="container contact">
+  <div><span class="kicker">Контакти</span><h2>Свържете се с фондацията</h2><div class="contact-details"><div><strong>Локация</strong><span>София, България</span></div><div><strong>Домейн</strong><span>cppd.eu</span></div></div></div>
+  <div class="contact-form contact-placeholder"><span class="kicker">Официален контакт</span><h3>Служебният имейл се активира.</h3><p>След настройването на пощата тук ще добавим директен адрес за контакт. Сайтът е подготвен за <strong>office@cppd.eu</strong>.</p></div>
+</div></section>
+</main>
+<footer><div class="container footer"><img src="assets/logo.webp" alt=""><div><p>Фондация „Център за обществена превенция и развитие“</p><p class="small">© <span id="year"></span> Всички права запазени.</p></div><div class="footer-links"><a href="#news">Новини</a><a href="#donate">Подкрепа</a><a href="#contacts">Контакти</a></div></div></footer>
+<script>
+const toggle=document.querySelector('.toggle');const links=document.querySelector('.links');toggle.addEventListener('click',()=>links.classList.toggle('open'));document.querySelectorAll('.links a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
